@@ -42,6 +42,11 @@ class _UsersPageState extends State<UsersPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "User List",
+        ),
+      ),
       body: isLoading
           ? Container(
               height: MediaQuery.of(context).size.height,
